@@ -27,6 +27,6 @@ def full_analyse (df : DataFrame, path : PosixPath) -> dict[str, DataFrame]:
     }
 
     for key, value in analyse_result.items():
-        value.to_csv(path / f"{key}.csv", index=is_serie)
+        value.to_csv(path / f"{key}.csv")
     
     return analyse_result

@@ -5,7 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "used-car-price-predictor"
 version = "0.1.0"
-dependencies = ["mypy", "pandas", "pandas-stubs", "dotenv", "python-dotenv"]
+dependencies = [
+    "mypy", 
+    "pandas", 
+    "pandas-stubs", 
+    "dotenv", 
+    "python-dotenv", 
+    "seaborn"
+]
 
 [tool.setuptools.packages.find]
 where = ["."]

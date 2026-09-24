@@ -11,7 +11,8 @@ dependencies = [
     "pandas-stubs", 
     "dotenv", 
     "python-dotenv", 
-    "seaborn"
+    "seaborn",
+    "types-seaborn"
 ]
 
 [tool.setuptools.packages.find]

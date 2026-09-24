@@ -1,5 +1,0 @@
-mypy
-pandas
-pandas-stubs
-dotenv
-python-dotenv

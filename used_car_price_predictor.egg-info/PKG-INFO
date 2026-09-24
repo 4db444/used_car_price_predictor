@@ -1,8 +1,0 @@
-Metadata-Version: 2.4
-Name: used-car-price-predictor
-Version: 0.1.0
-Requires-Dist: mypy
-Requires-Dist: pandas
-Requires-Dist: pandas-stubs
-Requires-Dist: dotenv
-Requires-Dist: python-dotenv

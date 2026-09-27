@@ -12,7 +12,9 @@ dependencies = [
     "dotenv", 
     "python-dotenv", 
     "seaborn",
-    "types-seaborn"
+    "types-seaborn",
+    "scikit-learn",
+    "xgboost"
 ]
 
 [tool.setuptools.packages.find]

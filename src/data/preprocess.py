@@ -52,17 +52,19 @@ def _replace_outliers_with_boundry_values(df : DataFrame, col : str) -> DataFram
 
 def clear_dataframe (df : DataFrame) -> DataFrame: 
 
-    # replace outliers
-    df = _replace_outliers_with_median(df, "selling_price")
-    df = _replace_outliers_with_median(df, "km_driven")
-    df = _replace_outliers_with_boundry_values(df, "year")
+    # Remove duplicates first
+    df = _remove_dup(df)
 
-    # fill missing values
+    # Fill missing values
     df = _fill_na_by_groups(df, KEY_GROUPING_COLS)
     df = _fill_na_categorical_cols(df)
     df = _fill_na_numeric_cols(df)
 
-    # remove duplicates
+    # Winsorize feature outliers
+    df = _replace_outliers_with_boundry_values(df, "km_driven")
+    df = _replace_outliers_with_boundry_values(df, "year")
+    df = _replace_outliers_with_boundry_values(df, "selling_price")
+
     df = _remove_dup(df)
 
     return df

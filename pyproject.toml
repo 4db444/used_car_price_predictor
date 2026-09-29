@@ -14,7 +14,9 @@ dependencies = [
     "seaborn",
     "types-seaborn",
     "scikit-learn",
-    "xgboost"
+    "xgboost",
+    "streamlit",
+    "joblib"
 ]
 
 [tool.setuptools.packages.find]
